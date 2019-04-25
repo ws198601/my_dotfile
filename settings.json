@@ -1,0 +1,28 @@
+{
+    "vim.leader": ",",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-k>": false
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["<leader>", "a"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+          "before": ["<leader>", "w"],
+          "after": [":w"]
+        },
+        {
+          "before": ["<leader>", "q"],
+          "commands": [":q"]
+        },
+        {
+          "before": ["<leader>", "y"],
+          "after": ["<C-C>"]
+        }
+    ]
+}
